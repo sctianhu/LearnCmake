@@ -1,6 +1,10 @@
 #Create a executable target with single source file
 project(Simplest)
 
+#turn on verbose output during cmake processing;
+#recommendation - turn off this switch, because too much info print on screen
+#set(CMAKE_VERBOSE_MAKEFILE on)
+
 #call 'message' command to show any info you want to know
 message(SOURCE_DIR:  ${PROJECT_SOURCE_DIR})
 message(BINARY_DIR:  ${PROJECT_BINARY_DIR})
