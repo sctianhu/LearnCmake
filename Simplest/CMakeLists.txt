@@ -1,6 +1,10 @@
 #Create a executable target with single source file
 project(Simplest)
 
+#call 'message' command to show any info you want to know
+message(SOURCE_DIR:  ${PROJECT_SOURCE_DIR})
+message(BINARY_DIR:  ${PROJECT_BINARY_DIR})
+
 #define a varaible with cmake command "set"
 set(SRC main.cpp)
 
