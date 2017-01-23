@@ -14,6 +14,10 @@ set(LIB_SRC Hello.cpp)
 set(APP_SRC main.cpp)
 
 add_library(libhello ${LIB_SRC})
+
+# set_target_properties - output library name is libhello.a
+#set_target_properties(libhello PROPERTIES OUTPUT_NAME "hello")
+
 add_executable(LinkLibs ${APP_SRC})
 
 target_link_libraries(LinkLibs libhello)
