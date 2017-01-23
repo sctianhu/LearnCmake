@@ -6,6 +6,7 @@ project(MultiDirs)
 include_directories(${PROJECT_SOURCE_DIR}/Dependency)
 
 set(APP_SRC main.cpp)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 #add_subdirectory -tell the cmake to find a 'CMakeLists.txt' from this folder; 
 add_subdirectory(Dependency)
